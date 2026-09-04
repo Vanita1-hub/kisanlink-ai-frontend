@@ -17,12 +17,13 @@ export default function NavBar(){
             <a href="#insights">Insights</a>
           </nav>
         </div>
-        <div className="header-actions">
+
+      </div>
+              <div className="header-actions">
           <Link to="/farmers" className="btn btn-primary">Farmer Login</Link>
           <Link to="/buyers" className="btn btn-secondary">Buyer Login</Link>
           <Link to="/market" className="btn btn-secondary">Customer Login</Link>
         </div>
-      </div>
     </header>
   )
 }
