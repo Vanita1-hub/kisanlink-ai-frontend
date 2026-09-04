@@ -5,7 +5,7 @@ export default function NavBar(){
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <div style={{display:'flex',alignItems:'center',gap:'1rem'}}>
+        <div style={{display:'flex',alignItems:'center',justifyContent: 'center',gap:'1rem'}}>
           <div className="brand">KisanLink AI</div>
           <nav className="nav">
             <Link to="/">Home</Link>
@@ -19,7 +19,7 @@ export default function NavBar(){
         </div>
 
       </div>
-              <div className="header-actions">
+            <div className="header-actions">
           <Link to="/farmers" className="btn btn-primary">Farmer Login</Link>
           <Link to="/buyers" className="btn btn-secondary">Buyer Login</Link>
           <Link to="/market" className="btn btn-secondary">Customer Login</Link>
