@@ -6,6 +6,6 @@ export default function VoiceButton(){
   }
 
   return (
-    <button onClick={speak} className="px-3 py-2 bg-white border rounded">🎤 Speak to KisanLink AI</button>
+    <button onClick={speak} className="btn btn-secondary">🎤 Speak to KisanLink AI</button>
   )
 }

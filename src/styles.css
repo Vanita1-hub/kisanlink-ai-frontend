@@ -1,0 +1,45 @@
+/* KisanLink AI - plain CSS stylesheet
+   Replaces Tailwind utilities with semantic classes used across the app
+*/
+:root{
+  --kgreen:#0b6b3a;
+  --leaf:#2AA84A;
+  --teal:#1CA7A0;
+  --offwhite:#FAF9F6;
+  --charcoal:#1f2937;
+  --muted:#6b7280;
+  --card-bg: #ffffff;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background: linear-gradient(180deg,#f8faf6,white); color:var(--charcoal)}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.site-header{background:var(--card-bg);box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.brand{color:var(--kgreen);font-weight:700;font-size:1.125rem}
+.nav{display:flex;gap:1rem;align-items:center}
+.nav a{color:var(--charcoal);text-decoration:none}
+.header-actions{display:flex;gap:0.5rem}
+.btn{border-radius:6px;padding:0.5rem 0.75rem;border:1px solid transparent;cursor:pointer;font-weight:600}
+.btn-primary{background:var(--kgreen);color:white;border-color:var(--kgreen)}
+.btn-secondary{background:white;color:var(--kgreen);border-color:#e5e7eb}
+.btn-leaf{background:var(--leaf);color:white;border-color:var(--leaf)}
+.btn-teal{background:var(--teal);color:white;border-color:var(--teal)}
+.hero{display:flex;align-items:center;background-image:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&s=4b4b7d1d3e5f9c3ff6e5d0e7303a9ef1');background-size:cover;background-position:center;color:white;padding:3rem;border-radius:8px}
+.hero-overlay{background:rgba(0,0,0,0.4);padding:2rem;border-radius:6px;width:100%}
+.hero h1{font-size:2rem;margin:0}
+.hero p{opacity:0.95;margin-top:0.5rem}
+.row{display:flex;gap:1rem}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.card{background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,0.04)}
+.small{font-size:0.9rem;color:var(--muted)}
+.section{margin:1.5rem 0}
+.form-input{width:100%;padding:0.5rem;border-radius:6px;border:1px solid #e5e7eb}
+.form-row{display:flex;gap:0.5rem}
+.aside{background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:0 1px 6px rgba(0,0,0,0.04)}
+.listing{padding:0.75rem;border-radius:6px;background:#fff;border:1px solid #eef2f7}
+.kv{font-weight:600}
+.footer-note{font-size:0.85rem;color:var(--muted)}
+.cart-item{display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px dashed #f1f5f9}
+@media(max-width:900px){.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.nav{display:none}}
